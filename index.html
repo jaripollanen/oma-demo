@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jari Pöllänen – DJ00BP24 Johdatus sovelluskehitykseen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jari Pöllänen – DJ00BP24 Johdatus sovelluskehitykseen</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="about.html">Tietoa minusta</a></li>
+            <li><a href="https://www.almamedia.fi/">Alma Media</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Esittely</h2>
+            <p>Moi, olen Jari ja työskentelen Alma Medialla Growth and Data Hackerina. Olen ollut Almalla töissä jo lähes kymmenen vuotta erilaisissa tehtävissä.</p>
+            <p>Maisteriopinnoiltani odotan paljon uusia ideoita, oivalluksia ja osaamisen vahvistamista.</p>
+            <img src="kuvat/alma-logo.jpg" alt="Alma median logo mustana">
+        </section>
+
+        <section>
+            <h2>Osaamistavoitteet</h2>
+            <p>Tällä kurssilla toivon oppivani erityisesti näitä asioita:</p>
+            <ul>
+                <li>JavaScript</li>
+                <li>API-rajapinnat</li>
+                <li>Tekoälyn hyödyntäminen koodauksessa</li>
+            </ul>
+            <p>Avaa selaimen konsoli (F12) ja paina nappia:</p>
+            <button id="nappi">Paina tästä</button>
+        </section>
+
+        <section id="api">
+            <h2>API-haku</h2>
+
+            <h3>Neuvo</h3>
+            <p>Paina nappia hakeaksesi uuden neuvon rajapinnasta:</p>
+            <button id="haeNappi">Hae uusi neuvo</button>
+            <p id="tulosTeksti">Vastaus ilmestyy tähän...</p>
+            <p>Avaa F12 ja valitse Console nähdäksesi raakadatan.</p>
+
+            <h3>Sää</h3>
+            <label for="kaupunki">Valitse kaupunki:</label>
+            <select id="kaupunki">
+                <option value="latitude=63.1&amp;longitude=21.6">Vaasa</option>
+                <option value="latitude=60.17&amp;longitude=24.94">Helsinki</option>
+                <option value="latitude=65.01&amp;longitude=25.47">Oulu</option>
+            </select>
+            <button id="saaNappi">Hae sää</button>
+            <p id="saaTeksti">Sää ilmestyy tähän...</p>
+
+            <h3>Kissafakta</h3>
+            <button id="kissaNappi">Hae kissafakta</button>
+            <p id="kissaTeksti">Kissafakta ilmestyy tähän...</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Jari Pöllänen – DJ00BP24 Johdatus sovelluskehitykseen</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
